@@ -44,3 +44,4 @@ generate_and_save_heatmap <- function(dds_obj, gene_vector, set_name, group,outp
 #   gene_vector <- list_pathways[[set_name]]
 #   generate_and_save_heatmap(dds_male, gene_vector, set_name, "Statin","_Male")
 # })
+
