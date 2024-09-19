@@ -79,9 +79,14 @@ create_marker_list <- function(convert_to_uppercase = FALSE) {
   return(marker_list)
 }
 
-# Now, once you source this script from GitHub, you can call the function
-marker_list <- create_marker_list()
+# How to use
 
-# Display the named list of gene vectors
-print(marker_list)
+## Source from github ##
+# marker_list <- create_marker_list()
+
+# # Display the named list of gene vectors
+# print(marker_list)
+
+# OR
+# human_list <- create_marker_list(TRUE) --> will convert gene names to uppercase
 
