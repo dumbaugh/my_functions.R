@@ -67,6 +67,65 @@ create_marker_list <- function(convert_to_uppercase = FALSE) {
                      "Ac003991.1", "Steap4", "Postn", "Pde1c", "Rgs5", "Adgrb3", 
                      "Ebf2", "Cacna1c", "Abcc9", "Lin7a", "Myo1b", "Stac", 
                      "Notch3", "Sgip1")
+  
+  #from henderson 2019 HSC dataset
+  fibroblast_markers <- c(
+    "Gsn", "Clec3b", "Serpinf1", "Dpt", "Fbln1", "Htra3", "Rnase4", "Cd34", "S100a6", "Igfbp6", 
+    "Mgp", "Meg3", "Gas1", "Gpx3", "Aebp1", "Fth1", "Mgst1", "Nbl1", "Gas6", "Mfap4", 
+    "Col1a1", "Pid1", "Pmp22", "Col1a2", "Timp2", "Nupr1", "C3", "Igf1", "Loxl1", "Igfbp4", 
+    "Abca8a", "Plpp3", "Mfap5", "Col6a2", "S100a16", "Entpd2", "Fmo2", "Tppp3", "Ogn", 
+    "Htra1", "Ctsh", "Pi16", "Vim", "S100a10", "Pcolce2", "Lgals1", "Emp1", "Sfrp1", "Inmt", 
+    "Dpep1", "Jund", "Plxdc2", "Celf2", "Penk", "Col6a1", "Col3a1", "Sepp1", "Ftl1", "Fxyd6", 
+    "Itm2a", "Col15a1", "Il11ra1", "Fbln2", "Gstm1", "Cyb5a", "Ahnak", "Tsc22d3", "Rcan2", 
+    "Lsp1", "Medag", "Mmp23", "Mmp2", "Tuba1a", "Ptgis", "Smoc2", "Selm", "Mtch1", "Bicc1", 
+    "Cd9", "Tmed3", "Osr1", "Ddah2", "Eln", "Lysmd2", "Lpl", "Nfix", "Ackr3", "Crispld2", 
+    "Ebf1", "Lum", "Tnxb", "Itih5", "Podn", "Mfap2", "Islr", "Cilp", "S100a13", "Ltbp4", 
+    "Atf5", "Fstl1", "Emp3", "Cd63", "Colec12", "Ecm2", "Scara5", "Ahnak2", "Fndc1", "Srpx", 
+    "Lpar1", "Pdgfrl", "Mn1", "Pcolce", "Camk2n1", "Olfml2b", "Krtcap2", "Gabarap", "Vit", 
+    "Plat", "Clmp", "Ccdc80", "Fcgrt", "Sulf2", "Tpt1", "Serpinh1", "Tmem119", "Itgbl1", 
+    "Pdpn"
+  )
+  
+  vsmc_markers <- c(
+    "Tpm2", "Acta2", "Tpm1", "Myl9", "Tagln", "Myl6", "Myh11", "Crip1", "Dstn", "Pcp4l1", 
+    "Mustn1", "Ckb", "Lmod1", "Bcam", "Cald1", "Ptp4a3", "Sparcl1", "Des", "Sncg", "Mylk", 
+    "mt-Cytb", "mt-Co3", "mt-Atp6", "Rcan2", "Cox8a", "Tsc22d1", "Ppp1cb", "Csrp1", "mt-Nd4", 
+    "Calm2", "Ptrf", "Tm4sf1", "Tinagl1", "Gng11", "Mef2c", "Prkcdbp", "Pln", "mt-Co1", 
+    "Nudt4", "mt-Nd1", "Gm13889", "Malat1", "Nrip2", "Id1", "Hspb1", "Ppp1r12a", "Cox4i2", 
+    "Flna", "Pdlim3", "Gapdh", "Map1lc3a", "Fxyd1", "Cnn1", "mt-Co2", "Cox6c", "Palld", 
+    "Map1b", "Atpif1", "Atp5b", "Cav1", "Actg2", "Rbpms2", "Id2", "Mob2", "Actn1", "Rbpms", 
+    "Ppp1r14a", "Cox6a1", "mt-Nd2", "Atp1b2", "Aspn", "Olfr558", "Tesc", "Igfbp5", "Cd200", 
+    "Notch3", "Uba2", "Mgst3", "Zak", "Gpx1", "Sorbs2", "Cd9", "Cystm1", "Hcfc1r1", "Rrad", 
+    "Ebf1", "Gm13861", "Rap1a", "Cox4i1", "Kcna5", "Ywhaq", "Nrarp", "Hspb6", "Ndufb9", 
+    "Pbxip1", "Blmh", "Hspb2", "Filip1l", "Uqcr11", "Sh3bgr", "Rock1", "Gadd45g", "Uqcrh", 
+    "Map3k7cl", "Ppia", "Asb2", "Sh3bgrl", "Atp5k", "Rasl12", "Cox7a2", "Csrp2", "Mast4", 
+    "Smarcd3", "FBn1", "Btg1", "Actb", "Ndufa4l2", "Serpine2", "Atp5h", "mt-Nd3", "Fbxl22", 
+    "Ptma", "Tnnt2", "Mcam", "Ppp1r12b", "Npy1r", "Uqcr10", "Thra", "Ndufb10", "Ndufa5", 
+    "Slc25a5", "Msrb1", "Mapre2", "Zfhx3", "Slc25a4", "Rasl11a", "Errfi1", "Atp5d", "Ybx1", 
+    "Gja4", "Cox7c", "Dynlrb1", "Tgfb1i1", "Atp5l", "H3f3b", "Lgals1", "Rasd1", "Tcap", 
+    "Atp5j2", "Cox6b1", "Net1", "Tuba1c", "Dmpk", "Itpk1", "Heyl", "Ntf3", "Gucy1a3", 
+    "Ptms", "Serpini1", "Aoc3", "Tpi1", "Hspb7", "Cox5b", "Col18a1", "Gpr20", "Ccdc107", 
+    "Cnn2", "Lmna", "Ppp1r15a", "Chchd2", "Efhd2", "Prkar1a", "Pdgfa", "Lbh", "Filip1", "Pls3"
+  )
+  
+  portal_hsc_markers <- c(
+    "Ngfr", "Igfbp3", "Sparc", "Gcgr", "Ndufa4l2", "Tnfrsf11b", "Tagln", "Rgs4", "Ttyh1", 
+    "Clca3a1", "Clec4g", "Rasl11a", "Il34", "Tmem178", "Col14a1", "Heyl", "Prss23", "Myl9", 
+    "Tpm2", "Lama1", "Susd2", "Fam84a", "Gns", "Alpl", "Bcr", "Pdgfrb", "Klhl23", "Mest", 
+    "Ckb", "Gpc6", "Cyp4b1", "Itgb3", "Tbx2", "Disp2", "Serpina3g", "Ccl2", "Fhl2", "Crip1", 
+    "Rem1", "Hilpda", "Hsd11b1", "Gja4", "Myh11", "Trib1", "Matn2", "Tpm1", "Cxcl14", 
+    "Phlda1", "Procr", "Cd248", "Htra1"
+  )
+  
+  
+  central_hsc_markers <- c(
+    "Lrrn3", "Gja1", "Sprn", "Inmt", "Adm", "Robo2", "Vcam1", "Loxl1", "Tsc22d1", "Htra3", 
+    "Sox4", "Sectm1a", "Adamts5", "Slc43a3", "Apoc1", "Qpct", "Lpar1", "Podn", "Gem", 
+    "Ackr4", "Bmyc", "Fcna", "Lum", "Ano1", "Adamtsl2", "Rspo3", "Spon2"
+  )
+  
+  
+  
   marker_names <- ls(pattern = "_markers$")
   
   # Fetch the actual gene lists using mget
