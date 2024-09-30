@@ -124,6 +124,20 @@ create_marker_list <- function(convert_to_uppercase = FALSE) {
     "Ackr4", "Bmyc", "Fcna", "Lum", "Ano1", "Adamtsl2", "Rspo3", "Spon2"
   )
   
+  # From Kuo review paper
+  activated_hsc_markers <- c("Acta2", "Col1a1","Col1a2","Col3a1", "Timp1","Col6a3","Tpm1","Tagln", 
+                                     "Pdgfrb", "Des", "Ctgf", "Mmp2", "Lox")
+  quiescent_hsc_markers <- c("Gfap", "Lrat", "Adh1", "Pck2", "Prom1")
+  inflammatory_hsc_markers <- c("Cd36","Ly6c","CLEC","Clec4g","Fabp4")
+  intermediate_activated_markers <- c("IRF7","Serping1","Itit3","Mustn1","Rgs5")
+  
+  #Friedman/JHEP 2024 paper
+  deactivation_hsc_markers <- c("Smoc2","Gsn")
+  
+  #Senescent HSC (putative)
+  senescent_hsc_markers <- c("Cdkn1a","Tp53","Cdkn2a","Il1a","Il1b","Il6","Spi1")
+  
+  
   
   
   marker_names <- ls(pattern = "_markers$")
