@@ -137,6 +137,19 @@ create_marker_list <- function(convert_to_uppercase = FALSE) {
   #Senescent HSC (putative)
   senescent_hsc_markers <- c("Cdkn1a","Tp53","Cdkn2a","Il1a","Il1b","Il6","Spi1")
   
+  # maayan lab neurotransmitter gene list
+  
+  neurotransmitter_markers <- c(
+    "Slc6a2", "Adra2a", "Doc2a", "Slc17a7", "Gad1", "Gad2", "Cckbr", 
+    "Slc44a1", "Slc32a1", "Unc13a", "Fev", "Park2", "Comt", "App", 
+    "Slc29a4", "Slc6a15", "Pparg", "Gal", "Vip", "Snap29", "Htl", 
+    "Slc6a4", "Otof", "Chmp4b", "Rgn", "En1", "Htr5a", "Slurp1", 
+    "Atp1a1", "Mecp2", "Cacna1a", "Gabbr1", "Rnls", "Adk", "Slc9a9", 
+    "Chat", "Snca", "Npy", "Gabrb2", "Gabra1", "Cplx2", "Cacnb4", 
+    "Tac1", "Tp73", "Il1b", "Htt", "Nr4a2", "Hcrtr1", "Rps6ka3", 
+    "Gnmt", "Rai1", "Prom1", "Sncg", "Scg3", "Gls2", "Pou5f1", 
+    "Pitx3", "Cyp19a1", "Chmp4a", "Mapt", "Ccl2", "Syt1", "Doc2b", "Sncb"
+  )
   
   
   
